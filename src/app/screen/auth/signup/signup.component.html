@@ -1,0 +1,22 @@
+<form class="signup" [formGroup]="signupForm" (ngSubmit)="signup()">
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput autocomplete="username" formControlName="email" type="email">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Nickname</mat-label>
+        <input matInput autocomplete="username" formControlName="nickname">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput autocomplete="current-password" formControlName="password" type="password">
+    </mat-form-field>
+    <button mat-flat-button color="primary" type="submit" [disabled]="signupForm.invalid">
+        Sign up
+    </button>
+    @if (loading()) {
+        <div class="loader-container">
+            <mat-spinner />
+        </div>
+    }
+</form>

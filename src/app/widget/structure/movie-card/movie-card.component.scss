@@ -1,0 +1,36 @@
+.movie-card {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+
+  &-poster {
+    flex: 1 1 auto;
+    position: relative;
+    border-radius: 12px;
+
+    img {
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  }
+
+  &-information {
+    display: flex;
+    flex-direction: column;
+    color: var(--kit-color--text-body);
+    font-size: 18px;
+    font-weight: 400;
+
+    &-title {
+      color: var(--kit-color--text);
+      font-size: 24px;
+      font-weight: 700;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}

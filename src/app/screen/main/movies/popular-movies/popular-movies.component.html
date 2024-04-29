@@ -1,0 +1,10 @@
+<div class="popular-movies">
+    <div class="popular-movies-title">
+        {{ 'mainMoviesPopular' | translate }}
+    </div>
+    <div class="popular-movies-cards">
+        @for (movie of movies$(); track movie.id) {
+            <app-movie-card [movie]="movie"/>
+        }
+    </div>
+</div>

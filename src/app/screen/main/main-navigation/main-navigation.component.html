@@ -1,0 +1,22 @@
+<div class="main-navigation-container">
+    <div class="main-navigation">
+        <a routerLink="/">
+            <img class="main-navigation-logo" alt="logo" src="https://files.readme.io/29c6fee-blue_short.svg">
+        </a>
+        <div class="main-navigation-actions">
+            @if (user(); as user) {
+                <span>{{ user.email }}</span>
+                <button mat-flat-button color="primary" type="button" (click)="logout()">
+                    {{  'mainActionLogout' | translate }}
+                </button>
+            } @else {
+                <a mat-stroked-button color="primary" routerLink="/auth/signup">
+                    {{ 'mainActionSignUp' | translate }}
+                </a>
+                <a mat-flat-button color="primary" routerLink="/auth/login">
+                    {{ 'mainActionLogIn' | translate }}
+                </a>
+            }
+        </div>
+    </div>
+</div>

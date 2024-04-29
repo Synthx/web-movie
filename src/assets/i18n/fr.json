@@ -1,0 +1,11 @@
+{
+	"mainNavigationMovies": "Films",
+	"mainNavigationSeries": "Séries",
+	"mainActionLogIn": "Se connecter",
+	"mainActionSignUp": "S'inscrire",
+	"mainMoviesPopular": "Populaires",
+	"mainMoviesFeaturedWebsite": "Site Web",
+	"mainMoviesFeaturedReleaseDate": "Date de sortie",
+	"mainMoviesFeaturedDuration": "Durée",
+	"mainFooterCredits": "@ 2020 flow-ui. Tous droits reserves."
+}

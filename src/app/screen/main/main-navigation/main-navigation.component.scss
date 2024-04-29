@@ -1,0 +1,45 @@
+.main-navigation-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+
+  .main-navigation {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    height: 60px;
+    padding: 0 30px;
+
+    &-logo {
+      width: 100px;
+    }
+
+    &-content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &-link {
+        text-decoration: none;
+        color: var(--kit-color--text);
+        font-size: 16px;
+        font-weight: 300;
+
+        &.active {
+          font-weight: 700;
+        }
+      }
+    }
+
+    &-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<a class="movie-card" routerLink="/movies/{{ movie.id }}" [state]="movie">
+    <div class="movie-card-poster">
+        <img fill [alt]="movie.title" [ngSrc]="movie.poster_path">
+    </div>
+    <div class="movie-card-information">
+        <div class="movie-card-information-title">{{ movie.title }}</div>
+        {{ movie.release_date | date }}
+    </div>
+</a>

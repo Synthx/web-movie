@@ -1,0 +1,26 @@
+.popular-movies {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &-title {
+    color: var(--kit-color--text);
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0 30px;
+  }
+
+  &-cards{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    overflow: auto;
+    padding: 0 30px;
+
+    app-movie-card {
+      display: block;
+      height: 450px;
+      width: 240px;
+    }
+  }
+}

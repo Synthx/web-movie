@@ -1,0 +1,21 @@
+<div class="featured-movies">
+    @if (featuredMovie(); as movie) {
+        <img fill class="featured-movies-backdrop" alt="backdrop" [ngSrc]="movie.backdrop_path">
+        <div class="featured-movies-content">
+            <div class="featured-movies-content-information">
+                <div class="featured-movies-content-information-title">
+                    {{ movie.title }}
+                </div>
+                <div class="featured-movies-content-information-data">
+                    <div>{{ 'mainMoviesFeaturedReleaseDate' | translate }}: {{ movie.release_date | date }}</div>
+                    <div>{{ 'mainMoviesFeaturedDuration' | translate }}: {{ movie.runtime }}</div>
+                    <div>{{ movie.overview }}</div>
+                </div>
+                <a mat-flat-button color="primary" target="_blank" [href]="movie.homepage">
+                    {{  'mainMoviesFeaturedWebsite' | translate }}
+                </a>
+            </div>
+            <img height="370" width="280" class="featured-movies-content-poster" [alt]="movie.title" [ngSrc]="movie.poster_path">
+        </div>
+    }
+</div>

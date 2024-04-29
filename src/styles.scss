@@ -1,0 +1,23 @@
+@import "ngx-toastr/toastr";
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  body {
+    background: var(--kit-color--background);
+    color: var(--kit-color--text-body);
+  }
+}
+
+.loader-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

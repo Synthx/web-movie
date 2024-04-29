@@ -1,0 +1,18 @@
+<div class="movies-detail">
+    <div class="movies-detail-header">
+        @if (backdrop(); as backdrop) {
+            <img fill alt="backdrop" [ngSrc]="backdrop">
+        }
+        <div class="movies-detail-header-content"></div>
+    </div>
+    <div class="movies-detail-information">
+        @if (poster(); as poster) {
+            <img width="200" height="300" alt="poster" [ngSrc]="poster">
+        }
+        <div class="movies-detail-information-container">
+
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,18 @@
+.main-footer-container {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+  .main-footer {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-credits {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
